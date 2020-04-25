@@ -1,3 +1,6 @@
+body{
+    background-color: #F0FFFF;
+}
 header {
     background: linear-gradient(175deg, rgba(0,0,102,1) 6%, rgba(199,199,199,1) 44%, rgba(8,22,94,1) 100%);
 }
@@ -21,15 +24,17 @@ button:hover {
 
 #currentDay {
     text-align: center;
-    color:blue;
+    color:black;
     border-radius: 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid blue;
   }
 
 
 
 #current-box {
     text-align: center;
+    color: white;
+    text-shadow: 2px 2px #000000;
    
 }
 
@@ -41,4 +46,26 @@ button:hover {
 #info {
     font-size: 22px;
 }
+
+.col {
+    text-align: center;
+}
+
+
+.col p {
+    color: whitesmoke;
+    text-shadow: 1.5px 1.5px #000000;
+}
+
+h3 {
+    color: white;
+    text-shadow: 1.5px 1.5px #000000;
+    font-size: 35px;
+}
+
+.col p span {
+    color: whitesmoke;
+    text-shadow: 1.5px 1.5px #000000;
+}
+
 

@@ -28,10 +28,9 @@ button:hover {
 
 
 
-#currentBox {
+#current-box {
     text-align: center;
-    border-style: dashed;
-    border-color: blue;
+   
 }
 
 .city {

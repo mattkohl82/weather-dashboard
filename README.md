@@ -21,7 +21,7 @@ You simply type whatever city you would like to know the weather info about and 
 I was able to save to localstorage but not repopulate the page with items from localstorage.
 
 
-![Image of one city](./images/scshot.jpg)
+![Image of one city](./assets/images/scshot.jpg)
 
 
-![Image of another city](./images/scshot1.jpg)
+![Image of another city](./assets/images/scshot1.jpg)

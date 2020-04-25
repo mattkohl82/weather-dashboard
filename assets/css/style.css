@@ -1,0 +1,45 @@
+header {
+    background: linear-gradient(175deg, rgba(0,0,102,1) 6%, rgba(199,199,199,1) 44%, rgba(8,22,94,1) 100%);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+button {
+    padding: 3px 5px 3px 5px;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    transition: all .5s ease-out;
+
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
+
+#currentDay {
+    text-align: center;
+    color:blue;
+    border-radius: 0;
+    border-bottom: 2px solid black;
+  }
+
+
+
+#currentBox {
+    text-align: center;
+    border-style: dashed;
+    border-color: blue;
+}
+
+.city {
+    font-size: 35px;
+    text-decoration: underline blue;
+}
+
+#info {
+    font-size: 22px;
+}
+

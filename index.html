@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap, then icons, then personal css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-center">
+            <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+
+    <div class="container d-flex justify-content-around">
+
+        <div class="col-3 h-100">
+            <div>
+                <h2>Search for a City:</h2>
+                <input type="text" id="citySearch" placeholder="Search...">
+                <button type="button border-bottom" onclick="myFunction()"><span class="oi oi-magnifying-glass"></span></button>
+            </div>
+
+        </div>
+
+        <div class="col-md-9">
+            <h2 id="currentDay"></h2>
+            <div class="container" id="currentBox">
+                <!--Weather for current location-->
+                <p class="city"></p>
+                <p class="icon" id="info"></p>
+                <p class="temp" id="info"></p>
+                <p class="high" id="info"></p>
+                <p class="low" id="info"></p>
+                <p class="humidity" id="info"></p>
+                <p class="wind" id="info"></p>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+
+
+
+    <!-- jQuery and Moments-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

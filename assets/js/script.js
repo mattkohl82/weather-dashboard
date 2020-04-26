@@ -59,7 +59,7 @@ function myFunction() {
         
     // creates the UV index and changes colors based off dangerous to not dangerous
 
-    return fetch('http://api.openweathermap.org/data/2.5/uvi?appid='+apiKey+'&lat='+lat+'&lon='+lon)
+    return fetch('https://api.openweathermap.org/data/2.5/uvi?appid='+apiKey+'&lat='+lat+'&lon='+lon)
 
     .then((response) => {
       return response.json();

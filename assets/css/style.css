@@ -9,6 +9,10 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
+.city-history {
+    color: black;
+}
+
 button {
     padding: 3px 5px 3px 5px;
     color: rgb(255, 255, 255);

@@ -24,9 +24,9 @@ setInterval(updateTime, 100);
 updateTime();
 
 // this creates the current forecast for the city you search
-function myFunction() {
+function myFunction(city) {
     
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+citySearch.value+'&APPID='+apiKey+'&units=imperial')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+city+'&APPID='+apiKey+'&units=imperial')
 
     .then((response) => {
       return response.json();
@@ -82,9 +82,9 @@ function myFunction() {
 
 
 //creates the five day forecast
-function fiveDay() {
+function fiveDay(city) {
 
-  fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + citySearch.value + '&APPID=' + apiKey + '&units=imperial')
+  fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&APPID=' + apiKey + '&units=imperial')
 
   .then((response) => {
     return response.json();
@@ -134,40 +134,58 @@ function fiveDay() {
 }
 
 
+function addCity(city) {
+
+  var h1 = $('<h1 class="city-history">') //same as documnent.createElement
+            
+  h1.text(city)
+
+  $('#history').append(h1)
+
+}
+
+
 // saves data to local storage
 
 document.getElementById("search").addEventListener("click", function() {
-  fiveDay();
-  myFunction();
+  fiveDay(citySearch.value);
+  myFunction(citySearch.value);
+  addCity(citySearch.value);
 
   let searchHistory = localStorage.getItem("search");
   if(searchHistory) {
-    searchHistory = JSON.parse(searchHistory)
+    searchHistory = JSON.parse(searchHistory) //turn back into js data
     searchHistory.push(citySearch.value);
 
   } else {
-    searchHistory = [citySearch.value];
+    searchHistory = [citySearch.value];//means no data create array
      
   }
 
-  localStorage.setItem("search", JSON.stringify(searchHistory));
+  localStorage.setItem("search", JSON.stringify(searchHistory)); //puts into local storgae
 });
 
-// I tried to get the data to come out and populate but it just broke everything
 
-// function renderSearchHistory() {
-//   historyEl.innerHTML = "";
-//   for (let i=0; i<searchHistory.length; i++) {
-//       const historyItem = document.createElement("input");
-//       historyItem.setAttribute("type","text");
-//       historyItem.setAttribute("readonly",true);
-//       historyItem.setAttribute("class", "form-control d-block bg-white");
-//       historyItem.setAttribute("value", searchHistory[i]);
-//       historyEl.append(historyItem);
-//   }
-// }
 
-// renderSearchHistory();
+
+
+
+function renderSearchHistory() {
+
+  let searchHistory = localStorage.getItem("search");
+
+  if(searchHistory) {
+    searchHistory = JSON.parse(searchHistory) //turn back into js data
+
+    for(var i = 0; i < searchHistory.length; i++) {
+      addCity(searchHistory[i]);
+  
+  }
+
+  }
+}
+
+renderSearchHistory();
 
 
   

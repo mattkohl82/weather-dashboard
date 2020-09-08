@@ -1,27 +1,45 @@
-# Weather Dashboard 
+<h1 align="center">Weather Dashboard</h1>
 
-link to working site
-https://mattkohl82.github.io/weather-dashboard/
+<p align="center">
+    <img src="https://img.shields.io/badge/HTML-brightgreen"/>
+    <img src="https://img.shields.io/badge/CSS-red"/>
+    <img src="https://img.shields.io/badge/Javascript-success"/>
+    <img src="https://img.shields.io/badge/Bootstrap-4-yellow"/>
+    <img src="https://img.shields.io/badge/JQuery-orange"/>
+    <img src="https://img.shields.io/badge/Moment.js-blue"/>
+    <img src="https://img.shields.io/badge/WeatherAPI-black"/>
+</p>  
 
-link to github site
-https://github.com/mattkohl82/weather-dashboard
-
-This is a simple app that uses server based API's to look up any city. It will bring back info of the current days forecast and a five day forecast for that city. 
-
-### How to use
-You simply type whatever city you would like to know the weather info about and it will retrieve it for you. 
-
-## Tools used
-- Basic HTML, CSS, and JS
-- Bootstrap 4
-- JQuery
-- Moment JS
-
-## Improvements needed
-I was able to save to localstorage but not repopulate the page with items from localstorage.
+<p align='center'>
+    <img src="./assets/images/city.jpg" alt="city"/>
+</p>  
 
 
-![Image of one city](./assets/images/scshot.jpg)
+## Table of Contents
+- [Description](#description)
+- [Installation](#install)
+- [Usage](#usage)
+- [Questions](#questions)
+
+## Description
+This is a simple app that uses server based API's to look up any city. It will bring back info of the current days forecast and a five day forecast for that city.   
+  
+## Install
+Clone Repo to computer
+
+## Usage
+Open index.html
+
+## Below is a link to the GitHub repository   
+
+[Weather Dashboard Github Repo](https://github.com/mattkohl82/weather-dashboard)    
+
+### Deployed app
+[Weather Dashboard Deployed APP](https://mattkohl82.github.io/weather-dashboard/) 
 
 
-![Image of another city](./assets/images/scshot1.jpg)
+## Questions
+
+#### [Mattkohl82 for GitHub](https://github.com/Mattkohl82) 
+ 
+#### mattkohl82@gmail.com for ✉️ email 
